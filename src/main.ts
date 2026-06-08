@@ -303,7 +303,7 @@ const dmMachine = setup({
         onDone: "StartTracking",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed to set voice (fhVoice). Is the Furhat SDK/robot running? Details:", event.error),
+          actions: ({ event }) => console.error("Failed to set voice (fhVoice). Is the Furhat SDK/robot running? Details:", event.error),
         },
       },
     },
@@ -313,7 +313,7 @@ const dmMachine = setup({
         onDone: "Greet",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed to start user tracking (fhAttend). Details:", event.error),
+          actions: ({ event }) => console.error("Failed to start user tracking (fhAttend). Details:", event.error),
         },
       },
     },
@@ -323,7 +323,7 @@ const dmMachine = setup({
         onDone: "Surprise",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed greeting (fhGreet). Details:", event.error),
+          actions: ({ event }) => console.error("Failed greeting (fhGreet). Details:", event.error),
         },
       },
     },
@@ -333,7 +333,7 @@ const dmMachine = setup({
         onDone: "ShakeHead",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed surprise gesture (fhSurprise). Details:", event.error),
+          actions: ({ event }) => console.error("Failed surprise gesture (fhSurprise). Details:", event.error),
         },
       },
     },
@@ -343,7 +343,7 @@ const dmMachine = setup({
         onDone: "EyeRoll",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed shake head gesture (fhShakeHead). Details:", event.error),
+          actions: ({ event }) => console.error("Failed shake head gesture (fhShakeHead). Details:", event.error),
         },
       },
     },
@@ -353,7 +353,7 @@ const dmMachine = setup({
         onDone: "AngerWithSound",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed eye roll gesture (fhEyeRoll). Details:", event.error),
+          actions: ({ event }) => console.error("Failed eye roll gesture (fhEyeRoll). Details:", event.error),
         },
       },
     },
@@ -363,7 +363,7 @@ const dmMachine = setup({
         onDone: "Goodbye",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed anger with sound gesture (fhAngerWithSound). Details:", event.error),
+          actions: ({ event }) => console.error("Failed anger with sound gesture (fhAngerWithSound). Details:", event.error),
         },
       },
     },
@@ -373,7 +373,7 @@ const dmMachine = setup({
         onDone: "StopTracking",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed goodbye (fhGoodbye). Details:", event.error),
+          actions: ({ event }) => console.error("Failed goodbye (fhGoodbye). Details:", event.error),
         },
       },
     },
@@ -383,7 +383,7 @@ const dmMachine = setup({
         onDone: "DoneState",
         onError: {
           target: "Fail",
-          actions: ({ event }) => console.error("❌ Failed to stop tracking (fhAttendNobody). Details:", event.error),
+          actions: ({ event }) => console.error("Failed to stop tracking (fhAttendNobody). Details:", event.error),
         },
       },
     },
